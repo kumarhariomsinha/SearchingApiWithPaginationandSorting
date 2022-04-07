@@ -36,14 +36,6 @@ public class MovieController {
 		return (List<movies>) movieRepos.findAll();
 	}
 	
-	//Get Methodto get N movies data
-	@GetMapping("/nmovies")
-	public List<movies> getNMovies(){
-		
-    return null;
-
-	}
-	
 	//Get method to get movies name in sorting order w.r.t field
 	@GetMapping("/{field}")
 	public List<movies> getMoviesWithSort(@PathVariable String field){
